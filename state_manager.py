@@ -4,7 +4,7 @@ from turtle import Turtle, Screen
 class StateManager(Turtle):
     def __init__(self):
         super().__init__()
-        self.data = pandas.read_csv(r"C:\Users\KEVAL\Desktop\Coding\Python Udemy\games\indian_state_guess\indian_states_coordinates_updated.csv")
+        self.data = pandas.read_csv("indian_states_coordinates_updated.csv")
         self.user_input = ''
         self.correct_states_num = 0
         self.num_states = len(self.data["State"]) - 1
