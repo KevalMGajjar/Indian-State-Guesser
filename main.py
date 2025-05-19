@@ -6,7 +6,7 @@ from state_locator import StateLocator
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.tracer(0)
-screen.bgpic(r"C:\Users\KEVAL\Desktop\Coding\Python Udemy\games\indian_state_guess\indian_states.gif")
+screen.bgpic("indian_states.gif")
 state_manager = StateManager()
 state_locator = StateLocator()
 screen.listen()
