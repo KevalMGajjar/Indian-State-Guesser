@@ -41,7 +41,7 @@ inputs = []
 class StateLocator(Turtle):
     def __init__(self):
         super().__init__()
-        self.data = pandas.read_csv(r"C:\Users\KEVAL\Desktop\Coding\Python Udemy\games\indian_state_guess\indian_states_coordinates_updated.csv")
+        self.data = pandas.read_csv("indian_states_coordinates_updated.csv")
         self.states = self.data["State"].to_list()
         self.lower_states = [state.lower() for state in self.states]
         self.color("black")
